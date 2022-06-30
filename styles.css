@@ -1,0 +1,903 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 130px 50px 0 50px;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.div1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 750px;
+}
+
+.img1-div {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.img1 {
+    width: 65px;
+}
+
+.div2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.div3 {
+    width: 50%;
+    padding: 10px 40px 10px 20px;
+}
+
+.div3 p {
+    color: hsl(186, 14%, 43%);
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.div5 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    border: 2px solid hsl(189, 41%, 97%);
+    transition: 0.3s all ease;
+}
+
+.div5 img {
+    width: 8px;
+    height: 13px;
+}
+
+.div5 input {
+    width: 90%;
+    text-align: end;
+    font-family: 'Space Mono', monospace;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px 15px;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+}
+
+.div5:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.div5 input::placeholder {
+    color: hsl(184, 14%, 56%);
+}
+
+.div6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 10px;
+    padding-top: 7px;
+    margin-bottom: 30px;
+}
+
+.div6 input {
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 17px;
+    text-align: end;
+    font-weight: 700;
+    padding: 3px 7px;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    border: 2px solid hsl(189, 41%, 97%);
+    outline: none;
+    background-color: none;
+    transition: 0.3s all ease;
+}
+
+.div6 input:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.div6 input::placeholder {
+    font-size: 17px;
+    font-family: 'Space Mono', monospace;
+    color: hsl(186, 14%, 43%)
+}
+
+.btn {
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 3px 15px 0 15px;
+    justify-content: center;
+    color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    border: 2px solid hsl(183, 100%, 15%);
+    outline: none;
+    background-color: hsl(183, 100%, 15%);
+    transition: 0.3s all ease;
+    display: flex;
+}
+
+.btn p {
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(189, 41%, 97%);
+}
+
+.you {
+    display: flex;
+    justify-content: space-between;
+}
+
+.down {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(210, 116, 49);
+}
+
+.up {
+    text-align: end;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    height: 10px;
+    margin-bottom: 20px;
+    color: rgb(210, 116, 49);
+}
+
+.btn:hover {
+    background: rgb(146, 232, 220);
+    border: 2px solid rgb(146, 232, 220);
+}
+
+.div7 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    border: 2px solid hsl(189, 41%, 97%);
+    transition: 0.3s all ease;
+}
+
+.div7 img {
+    width: 8px;
+    height: 13px;
+}
+
+.div7 input {
+    width: 90%;
+    text-align: end;
+    font-family: 'Space Mono', monospace;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px 15px;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+.div7:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.div7 input::placeholder {
+    color: hsl(184, 14%, 56%);
+}
+
+.div4 {
+    background: hsl(183, 100%, 15%);
+    width: 50%;
+    border-radius: 15px;
+    padding: 45px 30px 30px 30px;
+}
+
+.div4 button {
+    background: hsl(183, 90%, 23%);
+    border: 2px solid hsl(183, 90%, 23%);
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    color: hsl(181, 85%, 19%);
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 800;
+    font-size: 16px;
+    opacity: 80%;
+    margin-top: 75px;
+    transition: 0.3s all ease;
+}
+
+.bgg {
+    background: hsl(183, 90%, 23%);
+}
+
+.bg {
+    background: hsl(172, 67%, 45%) !important;
+    border: 2px solid hsl(172, 67%, 45%) !important;
+    color: hsl(181, 85%, 19%) !important;
+}
+
+.pp {
+    color: hsl(181, 85%, 19%) !important;
+}
+
+.div4 button:hover {
+    background: rgb(146, 232, 220);
+    border: 2px solid rgb(146, 232, 220);
+}
+
+.div8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.div9 p {
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0;
+}
+
+.div9 p:first-child {
+    color: hsl(189, 41%, 97%);
+    font-weight: 600;
+}
+
+.div10 {
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: 35px;
+    margin: 0;
+}
+
+.reset {
+    background: hsl(183, 100%, 15%) !important;
+}
+
+.div11 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div12 p {
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0;
+}
+
+.div12 p:first-child {
+    color: hsl(189, 41%, 97%);
+    font-weight: 600;
+}
+
+.div13 {
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: 35px;
+    margin: 0;
+}
+
+.attribution {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 50px;
+    color: hsl(181, 85%, 19%);
+}
+
+.attribute {
+    display: none;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(172, 67%, 45%);
+    transition: 0.5s all ease;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+    color: hsl(181, 85%, 19%);
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 130px 30px 0 30px;
+        font-family: 'Space Mono', monospace;
+        background-color: hsl(185, 41%, 84%);
+    }
+    .div1 {
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 700px;
+    }
+    .img1-div {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .img1 {
+        width: 65px;
+    }
+    .div2 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        height: 100%;
+        background: hsl(0, 0%, 100%);
+        border-radius: 15px;
+        padding: 25px;
+    }
+    .div3 {
+        width: 50%;
+        padding: 10px 40px 10px 20px;
+    }
+    .div3 p {
+        color: hsl(186, 14%, 43%);
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0 0 5px 0;
+    }
+    .div5 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        border: 2px solid hsl(189, 41%, 97%);
+        transition: 0.3s all ease;
+    }
+    .div5 img {
+        width: 8px;
+        height: 13px;
+    }
+    .div5 input {
+        width: 90%;
+        text-align: end;
+        font-family: 'Space Mono', monospace;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 5px 15px;
+        color: hsl(183, 100%, 15%);
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: hsl(189, 41%, 97%);
+    }
+    .div5:hover {
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+    .div5 input::placeholder {
+        color: hsl(184, 14%, 56%);
+    }
+    .div6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        grid-gap: 10px;
+        padding-top: 7px;
+        margin-bottom: 30px;
+    }
+    .div6 input {
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        font-size: 17px;
+        text-align: end;
+        font-weight: 700;
+        padding: 3px 7px;
+        color: hsl(183, 100%, 15%);
+        border-radius: 5px;
+        border: 2px solid hsl(189, 41%, 97%);
+        outline: none;
+        background-color: none;
+        transition: 0.3s all ease;
+    }
+    .div6 input:hover {
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+    .div6 input::placeholder {
+        font-size: 17px;
+        font-family: 'Space Mono', monospace;
+        color: hsl(186, 14%, 43%)
+    }
+    .btn {
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 3px 15px 0 15px;
+        justify-content: center;
+        color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        border: 2px solid hsl(183, 100%, 15%);
+        outline: none;
+        background-color: hsl(183, 100%, 15%);
+        transition: 0.3s all ease;
+        display: flex;
+    }
+    .btn p {
+        font-family: 'Space Mono', monospace;
+        font-size: 18px;
+        font-weight: 700;
+        color: hsl(189, 41%, 97%);
+    }
+    .you {
+        display: flex;
+        justify-content: space-between;
+    }
+    .down {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(210, 116, 49);
+    }
+    .up {
+        text-align: end;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 5px;
+        height: 10px;
+        margin-bottom: 20px;
+        color: rgb(210, 116, 49);
+    }
+    .btn:hover {
+        background: rgb(146, 232, 220);
+        border: 2px solid rgb(146, 232, 220);
+    }
+    .div7 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        border: 2px solid hsl(189, 41%, 97%);
+        transition: 0.3s all ease;
+    }
+    .div7 img {
+        width: 8px;
+        height: 13px;
+    }
+    .div7 input {
+        width: 90%;
+        text-align: end;
+        font-family: 'Space Mono', monospace;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 5px 15px;
+        color: hsl(183, 100%, 15%);
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: none;
+    }
+    .div7:hover {
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+    .div7 input::placeholder {
+        color: hsl(184, 14%, 56%);
+    }
+    .div4 {
+        background: hsl(183, 100%, 15%);
+        width: 50%;
+        border-radius: 15px;
+        padding: 45px 30px 30px 30px;
+    }
+    .div4 button {
+        background: hsl(183, 90%, 23%);
+        border: 2px solid hsl(183, 90%, 23%);
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        color: hsl(181, 85%, 19%);
+        border-radius: 5px;
+        padding: 7px;
+        font-weight: 800;
+        font-size: 16px;
+        opacity: 80%;
+        margin-top: 75px;
+        transition: 0.3s all ease;
+    }
+    .bgg {
+        background: hsl(183, 90%, 23%);
+    }
+    .bg {
+        background: hsl(172, 67%, 45%) !important;
+        border: 2px solid hsl(172, 67%, 45%) !important;
+        color: hsl(181, 85%, 19%) !important;
+    }
+    .pp {
+        color: hsl(181, 85%, 19%) !important;
+    }
+    .div4 button:hover {
+        background: rgb(146, 232, 220);
+        border: 2px solid rgb(146, 232, 220);
+    }
+    .div8 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .div9 p {
+        color: hsl(184, 14%, 56%);
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0;
+    }
+    .div9 p:first-child {
+        color: hsl(189, 41%, 97%);
+        font-weight: 600;
+    }
+    .div10 {
+        color: hsl(172, 67%, 45%);
+        font-weight: 700;
+        font-size: 35px;
+        margin: 0;
+    }
+    .reset {
+        background: hsl(183, 100%, 15%) !important;
+    }
+    .div11 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .div12 p {
+        color: hsl(184, 14%, 56%);
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0;
+    }
+    .div12 p:first-child {
+        color: hsl(189, 41%, 97%);
+        font-weight: 600;
+    }
+    .div13 {
+        color: hsl(172, 67%, 45%);
+        font-weight: 700;
+        font-size: 35px;
+        margin: 0;
+    }
+    .attribution {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 50px;
+        color: hsl(181, 85%, 19%);
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(172, 67%, 45%);
+        transition: 0.5s all ease;
+    }
+    .attribution a:hover {
+        text-decoration: underline;
+        color: hsl(181, 85%, 19%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 50px 0px 0 0px;
+        font-family: 'Space Mono', monospace;
+        background-color: hsl(185, 41%, 84%);
+    }
+    .div1 {
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .img1-div {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .img1 {
+        width: 65px;
+    }
+    .div2 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        background: hsl(0, 0%, 100%);
+        border-radius: 15px 15px 0 0;
+        padding: 25px;
+    }
+    .div3 {
+        width: 100%;
+        padding: 5px 0px 30px 0px;
+    }
+    .div3 p {
+        color: hsl(186, 14%, 43%);
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0 0 5px 0;
+    }
+    .div5 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        background-color: none;
+        border-radius: 5px;
+        border: 2px solid hsl(189, 41%, 97%);
+        transition: 0.3s all ease;
+    }
+    .div5 img {
+        width: 8px;
+        height: 13px;
+    }
+    .div5 input {
+        width: 90%;
+        text-align: end;
+        font-family: 'Space Mono', monospace;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 5px 15px;
+        color: hsl(183, 100%, 15%);
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: hsl(189, 41%, 97%);
+    }
+    .div5:hover {
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+    .div5 input::placeholder {
+        color: hsl(184, 14%, 56%);
+    }
+    .div6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-gap: 10px;
+        padding-top: 7px;
+        margin-bottom: 30px;
+    }
+    .div6 input {
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        font-size: 20px;
+        text-align: end;
+        font-weight: 700;
+        padding: 3px 20px;
+        color: hsl(183, 100%, 15%);
+        border-radius: 5px;
+        border: 2px solid hsl(189, 41%, 97%);
+        outline: none;
+        background-color: hsl(189, 41%, 97%);
+        transition: 0.3s all ease;
+    }
+    .div6 input:hover {
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+    .div6 input::placeholder {
+        font-size: 19px;
+        font-family: 'Space Mono', monospace;
+        color: hsl(186, 14%, 43%)
+    }
+    .btn {
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 3px 15px 0 15px;
+        justify-content: center;
+        color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        border: 2px solid hsl(183, 100%, 15%);
+        outline: none;
+        background-color: hsl(183, 100%, 15%);
+        transition: 0.3s all ease;
+        display: flex;
+    }
+    .btn p {
+        font-family: 'Space Mono', monospace;
+        font-size: 20px;
+        font-weight: 700;
+        color: hsl(189, 41%, 97%);
+    }
+    .you {
+        display: flex;
+        justify-content: space-between;
+    }
+    .down {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(210, 116, 49);
+    }
+    .up {
+        text-align: end;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 5px;
+        height: 10px;
+        margin-bottom: 20px;
+        color: rgb(210, 116, 49);
+    }
+    .btn:hover {
+        background: rgb(146, 232, 220);
+        border: 2px solid rgb(146, 232, 220);
+    }
+    .div7 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        border: 2px solid hsl(189, 41%, 97%);
+        transition: 0.3s all ease;
+    }
+    .div7 img {
+        width: 12px;
+        height: 13px;
+    }
+    .div7 input {
+        width: 90%;
+        text-align: end;
+        font-family: 'Space Mono', monospace;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 5px 15px;
+        color: hsl(183, 100%, 15%);
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: hsl(189, 41%, 97%);
+    }
+    .div7:hover {
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+    .div7 input::placeholder {
+        color: hsl(184, 14%, 56%);
+    }
+    .div4 {
+        background: hsl(183, 100%, 15%);
+        width: 100%;
+        border-radius: 15px;
+        padding: 25px 20px 20px 20px;
+    }
+    .div4 button {
+        background: hsl(183, 90%, 23%);
+        border: 2px solid hsl(183, 90%, 23%);
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        color: hsl(181, 85%, 19%);
+        border-radius: 5px;
+        padding: 7px;
+        font-weight: 800;
+        font-size: 18px;
+        opacity: 80%;
+        margin-top: 25px;
+        transition: 0.3s all ease;
+    }
+    .bgg {
+        background: hsl(183, 90%, 23%);
+    }
+    .bg {
+        background: hsl(172, 67%, 45%) !important;
+        border: 2px solid hsl(172, 67%, 45%) !important;
+        color: hsl(181, 85%, 19%) !important;
+    }
+    .pp {
+        color: hsl(181, 85%, 19%) !important;
+    }
+    .div4 button:hover {
+        background: rgb(146, 232, 220);
+        border: 2px solid rgb(146, 232, 220);
+    }
+    .div8 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .div9 p {
+        color: hsl(184, 14%, 56%);
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0;
+    }
+    .div9 p:first-child {
+        color: hsl(189, 41%, 97%);
+        font-weight: 600;
+    }
+    .div10 {
+        color: hsl(172, 67%, 45%);
+        font-weight: 700;
+        font-size: 30px;
+        margin: 0;
+    }
+    .reset {
+        background: hsl(183, 100%, 15%) !important;
+    }
+    .div11 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .div12 p {
+        color: hsl(184, 14%, 56%);
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0;
+    }
+    .div12 p:first-child {
+        color: hsl(189, 41%, 97%);
+        font-weight: 600;
+    }
+    .div13 {
+        color: hsl(172, 67%, 45%);
+        font-weight: 700;
+        font-size: 30px;
+        margin: 0;
+    }
+    .attribution {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 50px;
+        color: hsl(181, 85%, 19%);
+        display: none;
+    }
+    .attribute {
+        display: block;
+        font-size: 13px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 20px;
+        color: hsl(181, 85%, 19%);
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(172, 67%, 45%);
+        transition: 0.5s all ease;
+    }
+    .attribute a {
+        text-decoration: none;
+        color: hsl(172, 67%, 45%);
+        transition: 0.5s all ease;
+    }
+    .attribution a:hover {
+        text-decoration: underline;
+        color: hsl(181, 85%, 19%);
+    }
+    .attribute a:hover {
+        text-decoration: underline;
+        color: hsl(181, 85%, 19%);
+    }
+}
