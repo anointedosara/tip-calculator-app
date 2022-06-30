@@ -203,7 +203,7 @@ input::-webkit-inner-spin-button {
     border-radius: 5px;
     border: none;
     outline: none;
-    background-color: none;
+    background: hsl(189, 41%, 97%);
 }
 
 .div7:hover {
