@@ -55,16 +55,23 @@ for (let i = 0; i < btn.length; i++) {
 
     btn[i].addEventListener("click", () => {
 
-        if (input.value == "" && input.value == 0 || number.value == "" && number.value == 0) {
+        if (input.value == "" || input.value == 0) {
             up.innerHTML = "can't be zero"
             div10.innerHTML = "$0.00"
             div13.innerHTML = "$0.00"
             div5.style.border = "2px solid rgb(210, 116, 49)"
-            down.innerHTML = "can't be zero"
-            div7.style.border = "2px solid rgb(210, 116, 49)"
         } else {
             up.innerHTML = ""
             div5.style.border = "2px solid hsl(189, 41%, 97%)"
+
+        }
+
+        if (number.value == "" || number.value == 0) {
+            div10.innerHTML = "$0.00"
+            div13.innerHTML = "$0.00"
+            down.innerHTML = "can't be zero"
+            div7.style.border = "2px solid rgb(210, 116, 49)"
+        } else {
             div10.innerHTML = "$" + eval(`${p[i].innerHTML / 100 / number.value} * ${input.value}`).toFixed(2)
             div13.innerHTML = "$" + eval(`${p[i].innerHTML / 100 / number.value * input.value} + ${input.value} / ${number.value}`).toFixed(2)
             down.innerHTML = ""
@@ -81,12 +88,24 @@ for (let i = 0; i < btn.length; i++) {
 }
 
 button.addEventListener("click", () => {
-    div10.innerHTML = "$0.00"
-    div13.innerHTML = "$0.00"
-    input.value = ""
-    number.value = ""
-    custom.value = ""
-    button.classList.remove("bg")
+    if (div10.innerHTML != "$0.00") {
+        div10.innerHTML = "$0.00"
+        div13.innerHTML = "$0.00"
+        input.value = ""
+        number.value = ""
+        custom.value = ""
+        btn[0].classList.remove("bg")
+        btn[1].classList.remove("bg")
+        btn[2].classList.remove("bg")
+        btn[3].classList.remove("bg")
+        btn[4].classList.remove("bg")
+        p[0].classList.remove("pp")
+        p[1].classList.remove("pp")
+        p[2].classList.remove("pp")
+        p[3].classList.remove("pp")
+        p[4].classList.remove("pp")
+        button.classList.remove("bg")
+    }
 })
 
 custom.addEventListener("click", () => {
